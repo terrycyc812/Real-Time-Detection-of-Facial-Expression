@@ -3,7 +3,7 @@
 
 ### Working Principle
  Once the camera is started, it will periodically capture images. For each image, human face will be detected by Haar Cascade Classifier and the face image will be cropped out. The face image will be passed to a simple Convolutional Neural Network (CNN) and classify the facial expression. When pain emotion is detected in consecutive images, an alert message together with a captured image will be sent to a specific person through telegram chatbot. 
-![](images/workflow.jpg | height=100)
+![](images/workflow.jpg){:height="50%" width="50%"}
 
 ### Data source for CNN training
  For 'Neutral' and 'Happy' emotion images, they come from [FER2013 in kaggle](https://www.kaggle.com/nicolejyt/facialexpressionrecognition).
