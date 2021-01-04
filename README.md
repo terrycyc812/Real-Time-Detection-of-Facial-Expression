@@ -24,4 +24,10 @@
   
   
 ### CNN Model training  
- The model architecture is mainly from DeepFace library. 
+ The model architecture is mainly from [DeepFace library](https://pypi.org/project/deepface/). Its emotion classification model has 7 targets (ie. angry, disgust, fear, happy, sad, surprise, neutral).  Since 'pain' (our major target) is absent, we will use our image dataset to retrain the model in order to classify our three targets (ie. Neutral, Happy, Pain). 
+ 
+ Model architecture:<br>
+ ![](images/architecture.jpg)
+ 
+ Learning curve:<br>
+ ![](images/learning_curve.jpg)
