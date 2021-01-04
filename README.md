@@ -10,7 +10,7 @@
  
  For 'Pain' emotion images, they come from [2D face sets](http://pics.stir.ac.uk/2D_face_sets.htm). Since the number of 'pain' images is far lower than that of 'Neutral' and 'Happy', selfies of our 'pain' expression are also used. 
  
- <img src='images/dataset.jpg' height=500>
+ <img src='images/dataset.jpg' height=300>
  
  ### Image data preprocessing
   As the images from FER2013 are in greystyle, all 'pain' emotion images will also be converted into greystyle before training. Also, the FER2013 images are given in ndarray with fixed length (i.e. 2304), all image input shapes for model training will be 48x48x1. 
@@ -27,7 +27,6 @@
  The model architecture is mainly from [DeepFace library](https://pypi.org/project/deepface/). Its emotion classification model has 7 targets (ie. angry, disgust, fear, happy, sad, surprise, neutral).  Since 'pain' (our major target) is absent, we will use our image dataset to retrain the model in order to classify our three targets (ie. Neutral, Happy, Pain). 
  
  Model architecture:<br>
- ![](images/architecture.jpg)
+ <img src='images/architecture.jpg' height=300>
  
- Learning curve:<br>
- ![](images/learning_curve.jpg)
+ <img src='images/learning_curve.jpg' height=300>
