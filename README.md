@@ -9,6 +9,7 @@
  For 'Neutral' and 'Happy' emotion images, they come from [FER2013 in kaggle](https://www.kaggle.com/nicolejyt/facialexpressionrecognition).
  
  For 'Pain' emotion images, they come from [2D face sets](http://pics.stir.ac.uk/2D_face_sets.htm). Since the number of 'pain' images is far lower than that of 'Neutral' and 'Happy', selfies of our 'pain' expression are also used. 
+ 
  ![](images/dataset.jpg)
  
  ### Image data preprocessing
@@ -20,6 +21,7 @@
   - Zoom
   - Shifting
   - Flipping
+  
   
 ### CNN Model training  
  The model architecture is mainly from DeepFace library. 
