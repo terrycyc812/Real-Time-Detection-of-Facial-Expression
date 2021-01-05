@@ -2,7 +2,7 @@
  A tool that can auto-send an instant alert to specific person via telegram whenever negative facial expression (eg. pain) is detected in the live camera. It is helpful in knowing any emergency needs for an elderly living alone.
 
 ### Working Principle
- Once the camera is started, it will periodically capture images. For each image, human face will be detected by Haar Cascade Classifier and the face image will be cropped out. The face image will be passed to a simple Convolutional Neural Network (CNN) and classify the facial expression. When pain emotion is detected in consecutive images, an alert message together with a captured image will be sent to a specific person through telegram chatbot. 
+ Once the camera is started, it will periodically capture images. For each image, human face will be detected by Haar Cascade Classifier and the face image will be cropped out. The face image will be passed to a simple Convolutional Neural Network (CNN) and classify the facial expression. When pain emotion is detected in consecutive images, an alert message together with a captured image will be sent to a specific person through telegram bot. 
  <img src = 'images/workflow.jpg' height=300>
 
 ### Data source for CNN training
@@ -30,3 +30,18 @@
  <img src='images/architecture.jpg' height=250>
  
  <img src='images/learning_curve.jpg' height=300>
+
+
+### Challenges
+ - Highly imbalanced dataset, limit the predictability of pain expression
+   * Suggestion: collect more pain images, using oversampling technique
+ - Unable to detect face expressions when target is not facing straight to webcam
+   * Suggestion: collect more side images of face expressions
+ - Elderly may have pain face even not in danger, leading false alert
+   * Suggestion: together with detection of falling down
+   
+ 
+ ### Skills Acquired
+  - Deep Learning with CNN
+  - Image processing using OvenCV and Keras
+  - Using smartphone as part of the system
